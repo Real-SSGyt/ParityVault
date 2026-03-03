@@ -84,19 +84,19 @@ sudo apt install par2 coreutils
 Make it executable:
 
 ``` bash
-chmod +x backup.sh
+chmod +x ParityVault.sh
 ```
 
 Run it:
 
 ``` bash
-./backup.sh
+./ParityVault.sh
 ```
 
 You'll be prompted to choose:
 
-    1) Backup
-    2) Restore
+    1) Create Backup
+    2) Restore Backup
 
 ------------------------------------------------------------------------
 
@@ -124,7 +124,11 @@ Default:
 
     5G
 
-Examples: - `10G` - `2G` - `500M` - `0` → disables splitting
+Examples:
+- `10G`
+- `2G`
+- `500M`
+-  `0` → disables splitting
 
 ### 5️⃣ PAR2 Redundancy Percentage
 
@@ -202,7 +206,7 @@ fails, restore stops safely
 
 Each run generates a log file:
 
-    backup_restore_YYYYMMDD_HHMMSS.log
+    parityvault_v1.0.0_YYYYMMDD_HHMMSS.log
 
 All output is recorded.
 
